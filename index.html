@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +10,71 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fff8f0;
+            background-color: rgb(238, 230, 196);
             color: #333;
         }
+
         header {
-            background-color: #b61a2f;
+            background-color: #971728;
             color: white;
             padding: 20px;
             text-align: center;
+            background-position: center;
         }
+
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .box img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+        }
+
         section {
             padding: 40px 20px;
             max-width: 900px;
             margin: auto;
         }
+
         .menu {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 20px;
         }
+
         .menu-item {
             background: white;
             padding: 15px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
+
         .menu-item img {
             width: 100%;
             border-radius: 8px;
         }
+
         .qr-section {
             text-align: center;
             margin-top: 40px;
         }
+
         footer {
             background-color: #9e5423;
             color: white;
@@ -60,76 +83,90 @@
             margin-top: 40px;
         }
     </style>
+
 </head>
+
 <body>
-
-<header>
-    <h1>MR CHURRO LA</h1>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
-
-<section id="about">
-    <h2>Welcome to MR CHURRO LA</h2>
-    <p>Mr Churro was founded in 1974 on Olvera St which is the oldest street Los Angeles and with the oldest home, Casa Avila Adobe. Our churros are freshly made from scratch. Come and enjoy our cozy atmosphere and friendly service.</p>
-</section>
-
-<section id="menu">
-    <h2>Our Menu</h2>
-    <div class="menu">
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Food">
-            <h3>Burrito * Taco * Sope * Hamburger * Hot Dog * Torta </h3>
-            <p></p>
+    <div class="container">
+        <div class="box">
+            <img src="churras (002).jpeg"
+                alt="Three anthropomorphic churras dressed as flamenco dancers with ruffled red and pink skirts and handheld fans, lifting their skirts." />
         </div>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Drinks">
-            <h3>Bottled Water * Aguas Frescas * Sodas * Energy Drink * Tejuino</h3>
-            <p></p>
-        </div>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Appetizars">
-            <h3>Doritos * Chips * Nacho Cheese</h3>
-            <p></p>
-        </div>
-        
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Coffee Drinks">
-            <h3>Americano * Cappucino * Frappe * Expresso * Smoothies</h3>
-            <p></p>
-            
-        </div>
-        <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Deserts">
-            <h3>Churros * Ice Cream *Rapsados</h3>
-            <p></p>
-                   
-    </div>
-    <div class="menu-item">
-            <img src="https://via.placeholder.com/200x150" alt="Merchandise">
-            <h3>T-Shirts * Mugs * Aprons * Canvas Bags</h3>
-            <p></p>
-</section>
+        <header>
+            <h1>MR CHURRO LA</h1>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: contact@MrChurroLA.com</p>
-    <p>Phone: (213) 680-9036</p>
+        <section id="about">
+            <h2>Welcome to MR CHURRO LA</h2>
+            <p>Mr Churro would like to welcome you to our home at the Historic Mexican Market Plaza known as Olvera
+                Street (Calle Olvera) since 1974. Our food is made fresh to order including the churros which are
+                made from scratch. In 1999 Mr Churro introduced filled churros with three flavors Cajeta (caramel),
+                Fresa (strawberry) and Vanilla (custard) and eventually added chocolate, guava, cheesecake, lechera
+                and apple.Come join us and enjoy our traditional street desert found on almost every corner in
+                Mexico!</p>
+        </section>
 
-    <div class="qr-section">
-        <h3>Scan for Full Menu</h3>
-        <!-- QR code generated from a free API -->
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://your-restaurant-menu-link.com" 
-             alt="QR Code to Menu">
-    </div>
-</section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu">
+                <div class="menu-item">
+                    <img src="3streettacos.jpg" alt="Food">
+                    <h3>* Burrito * Taco * Sope * Hamburger * Hot Dog * Torta </h3>
+                    <p></p>
+                </div>
+                <div class="menu-item">
+                    <img src="aguas frescas.jpeg" alt="Drinks">
+                    <h3>* Bottled Water * Aguas Frescas * Sodas * Energy Drink * Tejuino</h3>
+                    <p></p>
+                </div>
+                <div class="menu-item">
+                    <img src="nacho cheese.jpg" alt="Appetizars">
+                    <h3> * Doritos * Chips * Nacho Cheese</h3>
+                    <p></p>
+                </div>
 
-<footer>
-    <p>&copy; 2025 Mr Churro LA. All rights reserved.</p>
-</footer>
+                <div class="menu-item">
+                    <img src="coffee.jpeg" alt="Coffee Drinks">
+                    <h3> * Americano * Cappucino * Frappe * Expresso * Smoothies</h3>
+                    <p></p>
+
+                </div>
+                <div class="menu-item">
+                    <img src="churro!.jpg" alt="Deserts">
+                    <h3>Churros * Ice Cream *Rapsados</h3>
+                    <p></p>
+
+                </div>
+                <div class="menu-item">
+                    <img src="tequuierounchurro.jpg" alt="Merchandise">
+                    <h3>T-Shirts * Mugs * Aprons * Canvas Bags</h3>
+                    <p></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: contact@MrChurroLA.com</p>
+            <p>Phone: (213) 680-9036</p>
+
+            <div class="qr-section">
+                <h3>Scan for Full Menu</h3>
+                <!-- QR code generated from a free API -->
+                <img src="My_QR_Code_1-1024.png" alt="QR Code to Menu" 
+                width="560" height="560">
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Mr Churro LA. All rights reserved.</p>
+        </footer>
 
 </body>
+
 </html>
